@@ -12,7 +12,7 @@ class IndexController extends Controller
         $list = DB::table('channel_activity')
             ->orderBy('id','desc')
             ->paginate(3);
-
+ 
 
         //return view('test.index',['list'=>$list]);
     }
